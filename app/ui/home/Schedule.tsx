@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import consultationBanner from '../../images/ConsultationBanner.jpg'
+import consultationBanner from "../../images/homepage/ConsultationBanner.jpg"
 
 
 export default function Schedule() {
