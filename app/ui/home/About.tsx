@@ -9,8 +9,8 @@ export default function About() {
     <section id="about" className="relative py-28 px-4 md:px-12 bg-blue-50 overflow-hidden">
       {/* Background split */}
       <div className="absolute inset-0 z-0 flex flex-col lg:flex-row">
-        <div className="h-1/5 lg:h-full lg:w-1/3 bg-white"></div>
-        <div className="h-4/5 lg:h-full lg:w-2/3 bg-blue-50"></div>
+        <div className="h-3/10 lg:h-full lg:w-1/3 bg-white"></div>
+        <div className="h-7/10 lg:h-full lg:w-2/3 bg-blue-50"></div>
       </div>
 
 
