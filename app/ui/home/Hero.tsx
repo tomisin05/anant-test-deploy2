@@ -33,7 +33,7 @@ export default function Hero() {
             <div>
               <BiDownArrow />
             </div>
-            Anant LLC
+            <span className="whitespace-nowrap">Anant LLC</span>
           </Link>
         </div>
       </div>
