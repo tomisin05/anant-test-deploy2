@@ -13,7 +13,7 @@ export default function Hero() {
             alt="Hero background"
             fill
             priority
-            className="object-cover"
+            className="object-contain"
             quality={100}
           />
         </div>
