@@ -68,7 +68,12 @@ export default function Navbar() {
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+        const navbar = document.querySelector("nav");
+        const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+        window.scrollTo({top: offsetPosition, behavior: "smooth" });
     }
   }
 
