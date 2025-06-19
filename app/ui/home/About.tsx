@@ -13,6 +13,8 @@ export default function About() {
         <div className="h-1/2 lg:h-full lg:w-2/3 bg-blue-50"></div>
       </div>
 
+
+
       {/* Content container */}
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -27,7 +29,7 @@ export default function About() {
           </div>
 
           {/* Content column */}
-          <div className="flex flex-col space-y-6">
+          <div className="order-1 md:order-2 flex flex-col space-y-6 pt-20 md:pt-0">
             <h2 className="text-md font-bold text-gray-700">
               ABOUT US
             </h2>
