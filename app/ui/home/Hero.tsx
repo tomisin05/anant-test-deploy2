@@ -6,17 +6,17 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-      <section id="hero" className="relative w-full mx-auto bg-gray-900 h-screen">
-        <div className="absolute inset-0 w-full h-full">
-          <Image
-            src={heroAsset}
-            alt="Hero background"
-            fill
-            priority
-            className="object-coover object-top"
-            quality={100}
-          />
-        </div>
+    <section id="hero" className="relative w-full mx-auto bg-gray-900">
+      <div className="absolute inset-0">
+        <Image
+          src={heroAsset}
+          alt="Hero background"
+          fill
+          priority
+          className="object-cover object-center w-full h-full"
+          quality={100}
+        />
+      </div>
       <div className="relative z-10 flex flex-col min-h-screen py-36 px-24">
         <div className="w-full py-36">
           <h1 className="text-6xl lg:text-8xl font-bold text-white mb-2">
