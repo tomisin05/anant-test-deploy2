@@ -29,7 +29,7 @@ export default function About() {
           </div>
 
           {/* Content column */}
-          <div className="order-1 md:order-2 flex flex-col space-y-6 pt-30 md:pt-0">
+          <div className="order-1 md:order-2 flex flex-col space-y-6 pt-40 md:pt-0">
             <h2 className="text-md font-bold text-gray-700">
               ABOUT US
             </h2>
