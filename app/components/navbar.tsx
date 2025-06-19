@@ -69,7 +69,7 @@ export default function Navbar() {
     const element = document.querySelector(href);
     if (element) {
         window.scrollTo({
-            top: element.getBoundingClientRect().top + window.pageYOffset,
+            top: element.getBoundingClientRect().top - 10,
             behavior: "smooth"
         });
     }
