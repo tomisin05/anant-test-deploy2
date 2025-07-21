@@ -65,11 +65,24 @@ export default function Navbar() {
   function handleScrollToSection(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
     if (!href.startsWith("#")) return
 
+    // e.preventDefault();
+    // const element = document.querySelector(href);
+    // if (element) {
+    //     window.scrollTo({
+    //         top: element.getBoundingClientRect().top + window.pageYOffset - 30,
+    //         behavior: "smooth"
+    //     });
+    // }
+
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
+        const navbar = document.querySelector("nav");
+        const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 0;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
         window.scrollTo({
-            top: element.getBoundingClientRect().top + window.pageYOffset - 30,
+            top: offsetPosition,
             behavior: "smooth"
         });
     }
